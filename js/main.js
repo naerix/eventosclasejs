@@ -1,19 +1,15 @@
-let boton = document.getElementById("btn1")
 
+document.addEventListener("DOMContentLoaded", e =>{
+    modoOscuro(".boton", ".container")
+});
 
+const modoOscuro = (boton,container)=>{
+    const a = document
 
-boton.addEventListener("click",() => {
-
-    alert("iniciando...")
-    iniciar()
-})
-
-
-function iniciar(){
-    window.location="pages/iniciado.html"
+    a.addEventListener("click", e =>{
+        if(e.target.matches(".boton")){
+            a.querySelector(container).classList.toggle("active")
+            a.querySelector(boton).classList.toggle("activebtn")
+        }
+    })
 }
-let boton2 = document.getElementById("btn2")
-
-boton2.addEventListener("click", () => {
-    document.body.setAttribute("style","background:#000")
-})

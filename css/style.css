@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 90vh;
+    width: 90%;
+    background-color: rgb(223,217,217);
+}
+
+.boton{
+    margin:20px;
+    border:none;
+    padding:20px;
+    background-color: rgb(61, 60, 60);
+    color: #fff;
+    border-radius: 40px;
+}
+
+.boton:active{
+    background-color: rgba(0, 140, 255, 0.2);
+}
+
+.active{
+   background-color: rgb(61, 60, 60);
+}
+
+.activebtn{
+    background-color: #fff;
+    color: rgb(61, 60, 60);
+    font-weight: bold;
+}
